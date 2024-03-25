@@ -1,6 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./App.css";
-import { IoFastFoodSharp } from "react-icons/io5";
+import { IoArrowBack, IoArrowForward, IoFastFoodSharp } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { LuShoppingCart } from "react-icons/lu";
 import { IoMdHeartEmpty } from "react-icons/io";
@@ -116,24 +116,30 @@ function App() {
         </div>
 
         {/*Menu*/}
-        <div className="flex flex-row justify-center items-center ps-60 w-[900px] gap-10">
-          <button className="flex flex-1 flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
+        <div className="flex flex-row justify-center items-center ps-60 w-[900px] gap-[30px]">
+          <div className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)]">
+            <IoArrowBack/>
+          </div>
+          <button className="flex flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
             <p className="text-[12px] font-bold">Cake</p>
             <p className="text-[10px] font-normal">Chocolate</p>
             <p className="text-[10px] font-bold">$18.00</p>
           </button>
 
-          <button className="flex flex-1 flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
+          <button className="flex flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
             <p className="text-[12px] font-bold">Cake</p>
             <p className="text-[10px] font-normal">Chocolate</p>
             <p className="text-[10px] font-bold">$18.00</p>
           </button>
 
-          <button className="flex flex-1 flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
+          <button className="flex flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
             <p className="text-[12px] font-bold">Cake</p>
             <p className="text-[10px] font-normal">Chocolate</p>
             <p className="text-[10px] font-bold">$18.00</p>
           </button>
+          <div className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)]">
+            <IoArrowForward/>
+          </div>
         </div>
       </div>
     </>

@@ -4,12 +4,13 @@ import { IoArrowBack, IoArrowForward, IoFastFoodSharp } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { LuShoppingCart } from "react-icons/lu";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { FaMinus, FaOpencart, FaPlus, FaRegUser, FaShoppingBasket } from "react-icons/fa";
-import { FiMinus } from "react-icons/fi";
-import { BsCart4 } from "react-icons/bs";
+import { FaMinus, FaPlus, FaRegUser } from "react-icons/fa";
 import { FaBasketShopping } from "react-icons/fa6";
+import { useState } from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <>
       {/*Main Container*/}
@@ -96,13 +97,22 @@ function App() {
             </p>
 
             <div className="flex flex-row justify-center items-center gap-20 pt-10">
-              <div className="flex flex-row justify-center items-center gap-5 bg-[#F2F2F2] w-[134px] h-[48px] rounded-[48px]">
-                <button className="bg-[#F48E28] px-[10px] py-[10px] rounded-full text-white hover:scale-95 transition-all">
+              <div className="flex flex-row justify-center items-center gap-5 bg-[#F2F2F2] h-[48px] rounded-[48px] px-2">
+                <button
+                  onClick={() => setCount((prevCount) => prevCount + 1)}
+                  className="bg-[#F48E28] px-[10px] py-[10px] rounded-full text-white hover:scale-95 transition-all"
+                >
                   <FaPlus />
                 </button>
 
-                <p className="text-[20px] font-bold">1</p>
-                <button className="bg-[#F48E28] px-[10px] py-[10px] rounded-full text-white hover:scale-95 transition-all">
+                <p className="text-center text-[20px] font-bold w-10">
+                  {count}
+                </p>
+
+                <button
+                  onClick={() => setCount((prevCount) => prevCount - 1)}
+                  className="bg-[#F48E28] px-[10px] py-[10px] rounded-full text-white hover:scale-95 transition-all"
+                >
                   <FaMinus />
                 </button>
               </div>
@@ -117,9 +127,9 @@ function App() {
 
         {/*Menu*/}
         <div className="flex flex-row justify-center items-center ps-60 w-[900px] gap-[30px]">
-          <div className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)]">
-            <IoArrowBack/>
-          </div>
+          <button className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] hover:scale-95 transition-all">
+            <IoArrowBack />
+          </button>
           <button className="flex flex-col justify-center items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4">
             <p className="text-[12px] font-bold">Cake</p>
             <p className="text-[10px] font-normal">Chocolate</p>
@@ -137,9 +147,9 @@ function App() {
             <p className="text-[10px] font-normal">Chocolate</p>
             <p className="text-[10px] font-bold">$18.00</p>
           </button>
-          <div className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)]">
-            <IoArrowForward/>
-          </div>
+          <button className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] hover:scale-95 transition-all">
+            <IoArrowForward />
+          </button>
         </div>
       </div>
     </>

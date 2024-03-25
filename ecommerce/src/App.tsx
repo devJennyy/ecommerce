@@ -126,52 +126,56 @@ function App() {
         </div>
 
         {/*Menu*/}
-        <div className="flex flex-row justify-center items-center ps-60 w-[900px] gap-[30px]">
+        <div className="flex flex-row justify-center items-center ps-60 w-[900px] gap-[30px] absolute bottom-0 mb-10">
           <button className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] hover:scale-95 transition-all">
             <IoArrowBack />
           </button>
 
-          <button className="flex flex-col justify-end items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
-            <div className="w-[105px] absolute top-0 left-0 ml-3 mt-[-30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
-              <img
-                src="/images/cakes.png"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pb-2">
-              <p className="text-[12px] font-bold">Cake</p>
-              <p className="text-[10px] font-normal mt-[-2px]">Chocolate</p>
-              <p className="text-[10px] font-bold mt-2">$18.00</p>
-            </div>
-          </button>
+          <div className="flex flex-row justify-center items-end gap-[30px]">
+            <button className="flex flex-col justify-end items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
+              <div className="w-[105px] absolute top-0 left-0 ml-3 mt-[-30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
+                <img
+                  src="/images/cakes.png"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="pb-2">
+                <p className="text-[12px] font-bold">Cake</p>
+                <p className="text-[10px] font-normal mt-[-2px]">Chocolate</p>
+                <p className="text-[10px] font-bold mt-2">$18.00</p>
+              </div>
+            </button>
 
-          <button className="flex flex-col justify-end items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
-            <div className="w-[105px] absolute top-0 left-0 ml-3 mt-[-30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
-              <img
-                src="/images/cakes.png"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pb-2">
-              <p className="text-[12px] font-bold">Cake</p>
-              <p className="text-[10px] font-normal mt-[-2px]">Chocolate</p>
-              <p className="text-[10px] font-bold mt-2">$18.00</p>
-            </div>
-          </button>
+            <button className="flex flex-col justify-end items-start text-left bg-white w-[160px] h-[170px] rounded-[30px] border-[1px] border-[#F48E28] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
+              <div className="w-[155px] absolute top-0 left-0 ml-[1px] mt-[-47px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
+                <img
+                  src="/images/mini-burger.png"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="pb-2">
+                <p className="text-[14px] font-bold">Burger</p>
+                <p className="text-[12px] font-normal mt-[-2px]">Chocolate</p>
+                <p className="text-[12px] font-bold mt-2">$18.00</p>
+              </div>
+            </button>
 
-          <button className="flex flex-col justify-end items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
-            <div className="w-[105px] absolute top-0 left-0 ml-3 mt-[-30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
-              <img
-                src="/images/cakes.png"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pb-2">
-              <p className="text-[12px] font-bold">Cake</p>
-              <p className="text-[10px] font-normal mt-[-2px]">Chocolate</p>
-              <p className="text-[10px] font-bold mt-2">$18.00</p>
-            </div>
-          </button>
+            <button className="flex flex-col justify-end items-start text-left bg-white w-[130px] h-[138px] rounded-[30px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] pl-4 pb-2">
+              <div className="w-[105px] absolute top-0 left-0 ml-3 mt-[-20px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]">
+                <img
+                  src="/images/pizza.png"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="pb-2">
+                <p className="text-[12px] font-bold">Pizza</p>
+                <p className="text-[10px] font-normal mt-[-2px]">
+                  Cheesy Pizza
+                </p>
+                <p className="text-[10px] font-bold mt-2">$18.00</p>
+              </div>
+            </button>
+          </div>
 
           <button className="flex justify-center items-center text-[#F48E28] rounded-full bg-white w-[52px] h-[52px] drop-shadow-[0_10px_10px_rgba(0,0,0,0.1)] hover:scale-95 transition-all">
             <IoArrowForward />

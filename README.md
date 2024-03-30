@@ -8,7 +8,8 @@ Static website for a ecommerce https://fastfood-web-ecommerce-devjenny.vercel.ap
 
 <br>
 
-![Food](https://github.com/devJennyy/ecommerce/assets/135243946/445ce13c-18c3-4595-862c-d70d0e5883a5)
+![image](https://github.com/devJennyy/ecommerce/assets/135243946/d8e4d9a3-6edf-40f7-9a11-2d508caa70eb)
+
 
 
 ***

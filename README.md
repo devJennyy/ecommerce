@@ -1,7 +1,9 @@
 # Ecommerce  Website
 Static website for a ecommerce https://fastfood-web-ecommerce-devjenny.vercel.app/
 
-
+## Available Screen Sizes
+- 1920 pixels width (desktop/laptop)
+  
 ## Tech Used
 - React
 - TailwindCSS
